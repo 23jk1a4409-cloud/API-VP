@@ -1,11 +1,12 @@
 # API-VP
 
-A REST API project built with Node.js to learn how to create and use web services.
+A Student Management System REST API built with Node.js and Express.
 
 ## Features
 
-- Create, read, update and delete (CRUD) operations
+- Create, read, update and delete (CRUD) operations for students
 - JSON request and response format
+- Separate route and controller files for clean code structure
 
 ## Technologies Used
 
@@ -34,7 +35,12 @@ A REST API project built with Node.js to learn how to create and use web service
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET    | /        | Check that the server is running |
+| GET    | /                  | Welcome message |
+| GET    | /api/students      | Get all students |
+| GET    | /api/students/:id  | Get one student by id |
+| POST   | /api/students      | Add a new student |
+| PUT    | /api/students/:id  | Update a student |
+| DELETE | /api/students/:id  | Delete a student |
 
 ## Author
 
