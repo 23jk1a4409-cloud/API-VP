@@ -42,6 +42,27 @@ A Student Management System REST API built with Node.js and Express.
 | PUT    | /api/students/:id  | Update a student |
 | DELETE | /api/students/:id  | Delete a student |
 
+## Student Data Format
+
+Each student has these fields:
+
+```json
+{
+  "id": 1,
+  "name": "adam",
+  "age": 100
+}
+```
+
+### Example: add a student (POST /api/students)
+
+```json
+{
+  "name": "john",
+  "age": 20
+}
+```
+
 ## Author
 
 [Ganga Bhavani](https://github.com/23jk1a4409-cloud)
